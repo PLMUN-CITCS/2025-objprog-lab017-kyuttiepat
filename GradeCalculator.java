@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class GradeCalculator {
 
+    // Method to get the student's score from user input
     public static double getStudentScore() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your score: ");
@@ -9,7 +10,9 @@ public class GradeCalculator {
         return score;
     }
 
+    // Method to calculate the letter grade based on the score
     public static String calculateGrade(double score) {
+  
         if (score >= 90) {
             return "A";
         } else if (score >= 80) {
@@ -23,6 +26,7 @@ public class GradeCalculator {
         }
     }
 
+    // Main method to run the program
     public static void main(String[] args) {
         double score = getStudentScore();
         String grade = calculateGrade(score);
